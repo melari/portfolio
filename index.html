@@ -10,12 +10,26 @@
   </head>
 
   <body>
-    <div class="title">Caleb Simpson</div>
+    <div class="background-overlay"></div>
+    <div class="title" onclick="close_section()">Caleb Simpson</div>
 
     <div class="option-wrapper">
-      <div class="option">Career</div>
-      <div class="option">Side<br>Projects</div>
-      <div class="option">Audio<br>Production</div>
+      <div id="menu-section-career" class="option green" onclick="open_section('career')">Career</div>
+      <div id="menu-section-projects" class="option blue" onclick="open_section('projects')">Side<br>Projects</div>
+      <div id="menu-section-audio" class="option orange" onclick="open_section('audio')">Audio<br>Production</div>
+    </div>
+
+    <div class="clear"></div>
+    <div id="section-career" class="section">
+      hello world career
+    </div>
+
+    <div id="section-projects" class="section">
+      hello world projects
+    </div>
+
+    <div id="section-audio" class="section">
+      hello world audio
     </div>
   </body>
 </html>

@@ -10,4 +10,62 @@
     return $('.title').css('opacity', 1);
   });
 
+  this.section_open = false;
+
+  this.open_section = function(selected_section) {
+    var background, color, section, selected_button, _i, _len, _ref;
+    if (this.section_open) {
+      return this.close_section();
+    }
+    this.section_open = true;
+    selected_button = $("#menu-section-" + selected_section);
+    background = selected_button.css('background-color');
+    color = selected_button.css('color');
+    $('.background-overlay').attr('data-original-background', $('.background-overlay').css('background-color'));
+    $('.background-overlay').css('background-color', background);
+    _ref = ['career', 'projects', 'audio'];
+    for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+      section = _ref[_i];
+      if (section === selected_section) {
+        continue;
+      }
+      $("#menu-section-" + section).css('width', '0px');
+      $("#menu-section-" + section).css('height', '0px');
+      $("#menu-section-" + section).css('opacity', '0');
+    }
+    selected_button.css('-webkit-transform', 'translate(23vw, -90px)');
+    selected_button.css('width', '31vw');
+    selected_button.css('height', '9vw');
+    selected_button.css('padding-top', '0.5vw');
+    $('.title').css('padding-top', '50px');
+    $('.option').css('margin-left', '0px');
+    section = $("#section-" + selected_section);
+    section.css('display', 'block');
+    section.css('opacity', 1);
+    section.css('background-color', background);
+    return section.css('color', color);
+  };
+
+  this.close_section = function() {
+    var section, _i, _len, _ref;
+    if (!this.section_open) {
+      return;
+    }
+    this.section_open = false;
+    $('.background-overlay').css('background-color', $('.background-overlay').attr('data-original-background'));
+    _ref = ['career', 'projects', 'audio'];
+    for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+      section = _ref[_i];
+      $("#menu-section-" + section).css('width', '23vw');
+      $("#menu-section-" + section).css('height', '16vw');
+      $("#menu-section-" + section).css('-webkit-transform', '');
+      $("#menu-section-" + section).css('padding-top', '7vw');
+      $("#menu-section-" + section).css('opacity', '1');
+      $("#section-" + section).css("display", "none");
+      $("#section-" + section).css("opacity", "0");
+    }
+    $('.title').css('padding-top', '100px');
+    return $('.option').css('margin-left', '2vw');
+  };
+
 }).call(this);
