@@ -33,10 +33,11 @@
       $("#menu-section-" + section).css('height', '0px');
       $("#menu-section-" + section).css('opacity', '0');
     }
-    selected_button.css('-webkit-transform', 'translate(23vw, -90px)');
+    selected_button.css('-webkit-transform', 'translate(10vw, -90px)');
     selected_button.css('width', '31vw');
-    selected_button.css('height', '9vw');
-    selected_button.css('padding-top', '0.5vw');
+    selected_button.css('height', '5vw');
+    selected_button.css('padding-top', '1.5vw');
+    selected_button.css('font-size', '1.5vw');
     $('.title').css('padding-top', '50px');
     $('.option').css('margin-left', '0px');
     section = $("#section-" + selected_section);
@@ -56,16 +57,20 @@
     _ref = ['career', 'projects', 'audio'];
     for (_i = 0, _len = _ref.length; _i < _len; _i++) {
       section = _ref[_i];
-      $("#menu-section-" + section).css('width', '23vw');
-      $("#menu-section-" + section).css('height', '16vw');
+      $("#menu-section-" + section).css('width', '10vw');
+      $("#menu-section-" + section).css('height', '8.5vw');
       $("#menu-section-" + section).css('-webkit-transform', '');
-      $("#menu-section-" + section).css('padding-top', '7vw');
+      $("#menu-section-" + section).css('padding-top', '1.5vw');
       $("#menu-section-" + section).css('opacity', '1');
+      $("#menu-section-" + section).css('font-size', '2vw');
       $("#section-" + section).css("display", "none");
       $("#section-" + section).css("opacity", "0");
     }
     $('.title').css('padding-top', '100px');
-    return $('.option').css('margin-left', '2vw');
+    $('.option').css('margin-left', '10vw');
+    $('#menu-section-career').css('margin-left', '0px');
+    $('#menu-section-career').css('height', '7vw');
+    return $('#menu-section-career').css('padding-top', '3vw');
   };
 
 }).call(this);
