@@ -1,0 +1,22 @@
+title: Caleb Simpson
+url: "https://portfolio.htlc.io"
+baseurl: ""
+
+markdown: kramdown
+#ins_logo: "./bits-logo.png"
+
+tracking_id: #
+
+footer: no
+footer_url: "https://portfolio.htlc.io"
+footer_text: "footer"
+
+sass:
+    style: compressed
+    sass_dir: _sass
+
+nav:
+ - name: "About"
+   link: "/"
+ - name: "Resume"
+   link: "Caleb_Simpson_Resume_2023.pdf"
