@@ -18,7 +18,14 @@ You can check out my full professional experience by viewing either:
 
 -------
 
-My latest roll was as Staff Engineer at [Shopify](https://shopify.com).
+My latest roll was Senior Developer at [Playbook](https://www.helloplaybook.com/).
+* Engaged across all disciplines (product, operations, design, engineering) to roadmap, prioritize, design, implement, and ship weekly. During my first year, I directly championed the design, timeline, and execution of over 8 projects, while contributing code & review to other projects in parallel.
+* Designed and built an ACATS transfer feature, enabling users to onboard millions of dollars to Playbook IRA accounts without incurring taxes, by integrating the Typescript backend with 3rd party REST APIs while maintaining safety around sensitive PII data.
+* Overhauled the pricing system to dramatically increase the flexibility & simplicity of experimenting and shipping new features to the product, by simplifying the data model and migrating users while maintaining uptime.
+* Built a developer tool to reliably reproduce CI test failure on a local development environment, resulting in a 50% decrease in time required to fix flakey tests, by consolidating all sources of randomness to a single controllable seed.
+
+
+Previously I was Staff Engineer at [Shopify](https://shopify.com).
 * Grew my team from a small 5 person team to over 30 engineers across 4 sub-teams. I helped peers with individual technical growth through mentorship, pairing, and targeted delegation.
 * Worked closely with other leaders to define long-term technical visions and short-term project roadmaps for how to achieve those visions.
 * Directly lead and contributed to key performance and scaling projects such as:
@@ -28,8 +35,8 @@ My latest roll was as Staff Engineer at [Shopify](https://shopify.com).
 
 ## Personal Projects
 
-1. [Loft Hosting](https://loft.hosting)
-2. [htlc.io - A Digital Garden](https://htlc.io)
+1. [Tagayasu](https://tagayasu.xyz)
+2. [Loft Hosting](https://loft.hosting)
 3. [Loft Games](https://loft-games.com)
 
 ## Technical Writing
