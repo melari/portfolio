@@ -13,7 +13,7 @@ I have experience as both **tech lead** and **senior contributor** roles on team
 ## Professional Experience
 
 You can check out my full professional experience by viewing either:
-- [My Resume](/Caleb_Simpson_Resume_2023.pdf)
+- [My Resume](/Caleb_Simpson_Resume_2024.pdf)
 - [My LinkedIn Profile](https://www.linkedin.com/in/caleb-simpson-239b9b90/)
 
 -------
